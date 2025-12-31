@@ -22,14 +22,14 @@ form.addEventListener('submit', (e) => {
     }
 })
 
-function getLoginFormErrors(email, password){
+function getLoginFormErrors(email, password) {
     let errors = [];
 
     if (email === '' || email === null) {
         errors.push('Email is required!');
         email_input.parentElement.classList.add('incorrect');
     }
-    if (password.length < 7) {
+    if (password !== '' && password.length < 7) {
         errors.push('Password must be more then 7 characters!');
         password_input.parentElement.classList.add('incorrect');
     }
@@ -52,7 +52,7 @@ function getSignupFormErrors(name, email, password, repeat) {
         errors.push('Email is required!');
         email_input.parentElement.classList.add('incorrect');
     }
-    if (password.length < 7) {
+    if (password !== '' && password.length < 7) {
         errors.push('Password must be more then 7 characters!');
         password_input.parentElement.classList.add('incorrect');
     }
@@ -64,11 +64,6 @@ function getSignupFormErrors(name, email, password, repeat) {
         errors.push('Please repeat password!');
         repeat_input.parentElement.classList.add('incorrect');
     }
-    if (repeat == password && (repeat === '' || repeat === null) && (password === '' || password === null)) {
-        errors.push('Password is required!');
-        repeat_input.parentElement.classList.add('incorrect');
-        password_input.parentElement.classList.add('incorrect');
-    } 
     if (repeat !== password) {
         errors.push('Please repeat the same password!');
         repeat_input.parentElement.classList.add('incorrect');
@@ -80,10 +75,10 @@ function getSignupFormErrors(name, email, password, repeat) {
 
 
 allInputs.forEach(input => {
-    input.addEventListener('input', ()=>{
+    input.addEventListener('input', () => {
         if (input.parentElement.classList.contains('incorrect')) {
             input.parentElement.classList.remove('incorrect');
-            error_message.innerText ='';
+            error_message.innerText = '';
         }
     });
 });
