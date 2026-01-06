@@ -10,7 +10,7 @@
    ```bash
     git clone https://github.com/Dmitr15/simple-login.git
     ```
-- Open index.html in your browser or use Live Server in VS Code
+- Open login.html or signup.html in your browser
 
 ### Screen forms:
 
