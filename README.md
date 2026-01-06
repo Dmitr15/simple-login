@@ -1,20 +1,47 @@
-# Simple LogIn and SignUp form
+# Modern Authentication System - Login & Signup Pages
+
+## A clean, modern, and fully responsive authentication system with client-side form validation, featuring both login and signup pages with beautiful UI/UX design.
+
+### Features
+- Dual Authentication Pages – Separate login and signup forms
+- Real-time Form Validation – Instant feedback on input errors
+- Responsive Design – Works perfectly on mobile, tablet, and desktop
+- Clean Modern UI – Minimalist design with intuitive user interface
+- Error Visualization – Clear visual indicators for incorrect inputs
+- Password Security – Password strength requirements and confirmation matching
+
+
+  
 
 ### Stack:
-- HTML5
-- CSS3
-- pure JavaScript
+- HTML5 – Semantic markup and form elements
+- CSS3 – Modern styling with CSS variables, Flexbox
+- JavaScript (ES6) – Form validation and dynamic error handling
+- Google Fonts
 
 ### How to use:
 - Clone the repository:
    ```bash
     git clone https://github.com/Dmitr15/simple-login.git
     ```
-- Open login.html or signup.html in your browser
+- Open `login.html` or `signup.html` in your browser
+
+
+## Form Validation Rules
+### Login Page
+- Email: Required field
+- Password: Required, minimum 7 characters
+
+### Signup Page
+- First Name: Required field
+- Email: Required field
+- Password: Required, minimum 7 characters
+- Repeat Password: Required, must match password
+
 
 <br>
 
-## Screen forms:
+## Screen forms
 
 <br>
 
