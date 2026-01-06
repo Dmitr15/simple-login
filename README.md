@@ -1,3 +1,19 @@
+# Simple LogIn and SignUp form
+
+### Stack:
+- HTML5
+- CSS3
+- pure JavaScript
+
+### How to use:
+- Clone the repository:
+   ```bash
+    git clone https://github.com/Dmitr15/simple-login.git
+    ```
+- Open index.html in your browser or use Live Server in VS Code
+
+### Screen forms:
+
 <img width="1895" height="933" alt="image" src="https://github.com/user-attachments/assets/1f6968c6-48f7-40c6-baa2-adad70ab4964" />
 
 <img width="1877" height="932" alt="image" src="https://github.com/user-attachments/assets/435b858d-b9f5-434c-9835-c23f8d459ca6" />
